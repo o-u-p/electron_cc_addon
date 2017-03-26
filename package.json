@@ -1,0 +1,46 @@
+{
+  "name": "hello_world",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-packager ./ hello_world --platform=win32 --arch=x64 --asar --overwrite --out ./pack --app-version=1.0.0",
+    "build": "build --platform win32 --arch x64"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/electron/electron-quick-start.git"
+  },
+  "keywords": [
+    "Electron",
+    "hellor",
+    "world"
+  ],
+  "author": "ygw",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/electron/electron-quick-start/issues"
+  },
+  "homepage": "https://github.com/electron/electron-quick-start#readme",
+  "devDependencies": {
+    "asar": "^0.12.4",
+    "electron-builder": "^5.35.0",
+    "electron-packager": "^7.7.0",
+    "electron-prebuilt": "^1.2.0",
+    "electron-rebuild": "^1.5.7"
+  },
+  "build": {
+    "asar": true,
+    "appId": "hello_world.isoyo.cn",
+    "app-category-type": "public.app-category.productivity",
+    "win": {
+      "msi": true,
+      "iconUrl": "https://github.com/${u}/${p}/blob/master/build/icon.ico?raw=true"
+    }
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}
